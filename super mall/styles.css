@@ -1,0 +1,113 @@
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #915656; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #651b1b; /* Dark background for header */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main sections styling */
+main {
+    padding: 20px 0;
+}
+
+section {
+    background-color: #fff; /* White background for sections */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(238, 79, 79, 0.1); /* Light shadow */
+}
+
+section h2 {
+    color: #444; /* Dark gray heading */
+    font-size: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.shop-item, .offer-item {
+    background-color: #f9f9f9; /* Light background for items */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(185, 17, 17, 0.1); /* Light shadow */
+}
+
+.shop-item h3, .offer-item h3 {
+    color: #333; /* Dark title */
+    font-size: 20px;
+}
+
+.shop-item p, .offer-item p {
+    color: #666; /* Medium gray text */
+}
+
+/* Footer styling */
+footer {
+    background-color: #5f2121; /* Dark background for footer */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+

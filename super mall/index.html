@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mall Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Super Mall</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shops">Shops</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to Super Mall!</h2>
+                <p>Explore our shops and offers.</p>
+            </div>
+        </section>
+
+        <section id="shops">
+            <div class="container">
+                <h2>Shops</h2>
+                <div id="shopList" class="grid-container">
+                    <!-- Static shop names -->
+                    <div class="shop-item">
+                        <h3> Smart bazzar</h3>
+                        <p>all necessary items available</p>
+                        <p>Location: City A</p>
+                    </div>
+                    <div class="shop-item">
+                        <h3>ZUDIO</h3>
+                        <p>trendy clothes</p>
+                        <p>Location: City B</p>
+                    </div>
+                    <!-- Add more shop items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="offers">
+            <div class="container">
+                <h2>Offers</h2>
+                <div id="offerList" class="grid-container">
+                    <!-- Static offers -->
+                    <div class="offer-item">
+                        <h3>t-shirt</h3>
+                        <p>Price: 1300rs</p>
+                        <p>Category: Category A</p>
+                    </div>
+                    <div class="offer-item">
+                        <h3>jeans</h3>
+                        <p>Price: 2000rs</p>
+                        <p>Category: Category B</p>
+                    </div>
+                    <!-- Add more offer items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="login">
+            <div class="container">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Super Mall. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <!-- Firebase configuration -->
+    <script src="firebase-config.js"></script>
+    <!-- Main JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
+
